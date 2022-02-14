@@ -1,26 +1,36 @@
 import React from "react";
+import { BannerHelp } from "../Helpers/helper";
+import Card from "./artistCard";
+const Highlight = (props) => {
 const DUMMY_DATA = [
     {
-        "artist_name":" mack",
-        "title": "singer",
-        "shows": "everythursday"
+        "title":" Artists",
+        "subtitle": "2015 music choice recording artist",
+        "description": "Meet artist and producers, and listen to the latest music."
     },
     {
-        "artist_name":"Sarah",
-        "title": "singer",
-        "shows": "everythursday"
+        "title":"Gratitude",
+        "subtitle": "gratitude project concert",
+        "description": "everythursday and sometimes sundays"
     },
     {
-        "artist_name":"Jimmy",
-        "title": "singer",
-        "shows": "everythursday"
+        "title":"Giving",
+        "subtitle": "Kickstarter",
+        "description": "giving is the ultimate feeling"
+    },
+    {
+      "title":"Sharing",
+      "subtitle": "Join the TIBC community",
+      "description": "giving is the ultimate feeling"
     }
 ]
 
-const Highlight = () => {
   return (
-    <div>
-      <div>Highlight Product</div>
+    <div className={`${props.className} highlights`}>
+      <BannerHelp title="highlights" className="section-banner"/>
+      {DUMMY_DATA.map((artist, index) => {
+        return <Card artist={artist} key={index}/>
+      })}
     </div>
   );
 };

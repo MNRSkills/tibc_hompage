@@ -7,7 +7,7 @@ import Community from "./Components/Pages/community";
 import Store from "./Components/Pages/store";
 import About from "./Components/Pages/about-us"
 import Navbar from "./Components/Layout/navBar";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (

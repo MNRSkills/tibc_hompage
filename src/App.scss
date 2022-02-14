@@ -1,0 +1,16 @@
+@use "./styles/card";
+.App {
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+}
+
+
+
+.section-banner {
+  background-color: #f1592a;
+}
