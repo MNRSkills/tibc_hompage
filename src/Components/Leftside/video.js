@@ -6,7 +6,7 @@ const Video = (props) => {
 
   return (
     <div className={`${props.className} player-section`}> 
-      <ReactPlayer url="https://www.youtube.com/watch?v=DyDfgMOUjCI" />
+      <ReactPlayer url="" />
       <Selection className="player-section"/>
 
     </div>
